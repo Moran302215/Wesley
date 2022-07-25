@@ -1,0 +1,20 @@
+{
+    "name": "sdd-assessment-task-2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+      "start": "node script.js"
+    },
+    "author": "",
+    "type": "module",
+    "dependencies": {
+      "@discordjs/builders": "^0.15.0",
+      "@discordjs/rest": "^0.5.0",
+      "discord-api-types": "^0.33.5",
+      "discord-reply": "^0.1.2",
+      "discord.js": "^13.8.0",
+      "node-fetch": "^3.2.6",
+      "webp-converter": "^2.3.3"
+    }
+  }

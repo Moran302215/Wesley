@@ -1,0 +1,324 @@
+/* Title styling */
+.title {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background-color: #5e84a1;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Subtitle styling */
+  .subtitle {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: gray;
+  }
+  /* Intro styling */
+  .introheading {
+    display: flex;
+    font-family: "Arima Madurai", cursive;
+  }
+  
+  /* Gives the 'card' appearance of the webp */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Body default styling unless otherwise specified */
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #2f3137;
+  }
+  
+  /* Panel Heading */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #37393f;
+    color: rgb(226, 218, 218);
+  }
+  
+  /* Style for h1 element in heading */
+  .header h1 {
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Left column component styling */
+  .leftcolumn h2 {
+    color: white;
+  }
+  
+  .leftcolumn h5 {
+    color: white;
+  }
+  
+  .leftcolumn p {
+    color: white;
+  }
+  
+  /* Nav Bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #5765f2;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #2f3137;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  /* fake coloured image for background of cards */
+  .fakeimg {
+    background-color: #5765f2;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #5765f2;
+    border-radius: 8px;
+  }
+  
+  /* styling of fake img components */
+  .fakeimg h5 {
+    font-family: "arial", sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* gives padding to card components */
+  .card {
+    background-color: #37393f;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 2px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 2px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make  two columns stack*/
+  @media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  /*search result bar for img*/
+  .searchbar {
+    background-color: #aaa;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #2f3137;
+    border-radius: 6px;
+  }
+  
+  /* overall button styling unless otherwise specified
+  button {
+    background-color: white;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    border: 2px solid #5765f2;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    position:relative;
+    text-align: center;
+    display: inline-block;
+  } */
+  
+  /* submit button for form */
+  .buttonSubmit {
+    text-align: left;
+    width: 20%;
+  }
+  
+  /* styling for faq unless otherwise specified */
+  .rightfaq p {
+    font-size: 14px;
+  }
+  
+  /* contact card styling */
+  .contact {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #5765f2;
+    border-radius: 8px;
+  }
+  
+  /* invite link card styling */
+  .invitelink {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #5765f2;
+    border-radius: 8px;
+  }
+  
+  /* button with attached link styling */
+  .blue-button {
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .blue-button {
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
+  }
+  
+  /* list styling unless otherwise specified */
+  li {
+    color: white;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  .analyse1 {
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 40px;
+    border-color: #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    height: 45px;
+    width: 20%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .generate1 {
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 40px;
+    border-color: #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    height: 45px;
+    width: 20%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .space {
+    width: 10%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .genspace {
+    background-color: #ddd;
+    height: 410px;
+  }
+  
+  .analyse2 {
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 10px;
+    border-color: #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+  
+  img {
+    display: flex;
+  }
+  
+  .copybutton {
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 10px;
+    border-color: #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .buttoncontainer2 {
+    text-align: center;
+  }
+  
+  .exampleimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    display: inline-block;
+  }
+  
+  #img-container {
+  overflow: hidden;
+  }
