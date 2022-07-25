@@ -1,4 +1,4 @@
-import ImageAPI from "./ai.js";
+import ImageAPI from "../js/website-ai.js";
 
 let analyse = document.getElementById("analyse1")
 let img = "https://unsplash.com/photos/AKwRzpi_EOc"
