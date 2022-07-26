@@ -56,6 +56,6 @@ client.on("guildCreate", (guild) => {
 
 client.on("messageCreate", (msg) => {
   if (msg.content === "w!duck") {
-    msg.channel.send("https://source.unsplash.com/random/900×700/?fruit")
+    msg.channel.send("https://source.unsplash.com/random/900×700/?duck")
   }
 })
