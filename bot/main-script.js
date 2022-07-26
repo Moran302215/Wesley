@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 //Imports
 dotenv.config();
 
-var duck = "https://source.unsplash.com/random/900×700/?duck"
+var duck = "https://source.unsplash.com/random"
 
 const client = new Client({
   intents: [
