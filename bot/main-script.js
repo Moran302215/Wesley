@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 //Imports
 dotenv.config();
 
+var duck = "https://source.unsplash.com/random/900×700/?duck"
+
 const client = new Client({
   intents: [
     Intents.FLAGS.GUILDS,
@@ -54,11 +56,8 @@ client.on("guildCreate", (guild) => {
 });
 //Whitelist
 
-function randomDuck() {
-  msg.channel.send("https://source.unsplash.com/random/900×700/?duck")
-}
 client.on("messageCreate", (msg) => {
   if (msg.content === "w!duck") {
-    randomDuck
+    msg.channel.send(duck)
   }
 })
