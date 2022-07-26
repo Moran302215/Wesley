@@ -1,10 +1,9 @@
 
-import { Client, Intents } from "discord.js";
+import { ContextMenuCommandAssertions, userMention } from "@discordjs/builders";
+import { Client, Intents, Message } from "discord.js";
 import dotenv from "dotenv";
 //Imports
 dotenv.config();
-
-var duck = "https://source.unsplash.com/random"
 
 const client = new Client({
   intents: [
@@ -55,9 +54,20 @@ client.on("guildCreate", (guild) => {
   }
 });
 //Whitelist
+function wait(ms){
+  var start = new Date().getTime();
+  var end = start;
+  while(end < start + ms) {
+    end = new Date().getTime();
+ }
+}
 
 client.on("messageCreate", (msg) => {
-  if (msg.content === "w!duck") {
-    msg.channel.send(duck)
+  if (msg.startsWith("w!study")) {
+    msg.channel.send("**Setting a timer for 25 minutes...")
+    wait (5000);
+    msg.channel.send("**Timer set!** Enjoy your study :hearts:")
+    wait (5000);
+    msg.channel.send("**Take a break!** Set a new study timer when you're ready to come back.")
   }
 })
