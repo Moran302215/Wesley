@@ -63,7 +63,7 @@ function wait(ms){
 }
 
 client.on("messageCreate", (msg) => {
-  if (msg.startsWith("w!study")) {
+  if (msg.content === "w!study") {
     msg.channel.send("**Setting a timer for 25 minutes...")
     wait (5000);
     msg.channel.send("**Timer set!** Enjoy your study :hearts:")
