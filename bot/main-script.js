@@ -1,5 +1,4 @@
 
-import { ContextMenuCommandAssertions, userMention } from "@discordjs/builders";
 import { Client, Intents, Message } from "discord.js";
 import dotenv from "dotenv";
 //Imports
@@ -64,10 +63,10 @@ function wait(ms){
 
 client.on("messageCreate", (msg) => {
   if (msg.content === "w!study") {
-    msg.channel.send("**Setting a timer for 25 minutes...")
+    msg.channel.send("**Setting a timer for 25 minutes...");
     wait (5000);
-    msg.channel.send("**Timer set!** Enjoy your study :hearts:")
+    msg.channel.send("**Timer set!** Enjoy your study :hearts:");
     wait (5000);
-    msg.channel.send("**Take a break!** Set a new study timer when you're ready to come back.")
+    msg.channel.send("**Take a break!** Set a new study timer when you're ready to come back.");
   }
-})
+});
