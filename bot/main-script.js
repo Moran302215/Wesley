@@ -44,14 +44,14 @@ client.on("messageCreate", (msg) => {
 });
 //Test message
 
-const whitelist = ["993399791394508831", "939771378754801664", "1001377114152505455"];
-client.on("guildCreate", (guild) => {
-  for (const item of whitelist) {
-    console.log(item);
-    if (item == guild.id) return;
-    guild.leave();
-  }
-});
+// const whitelist = ["993399791394508831", "939771378754801664", "1001377114152505455"];
+// client.on("guildCreate", (guild) => {
+//   for (const item of whitelist) {
+//     console.log(item);
+//     if (item == guild.id) return;
+//     guild.leave();
+//   }
+// });
 //Whitelist
 function wait(ms){
   var start = new Date().getTime();
