@@ -53,20 +53,3 @@ client.on("messageCreate", (msg) => {
 //   }
 // });
 //Whitelist
-function wait(ms){
-  var start = new Date().getTime();
-  var end = start;
-  while(end < start + ms) {
-    end = new Date().getTime();
- }
-}
-
-client.on("messageCreate", (msg) => {
-  if (msg.content === "w!study") {
-    msg.channel.send("**Setting a timer for 25 minutes...");
-    wait (5000);
-    msg.channel.send("**Timer set!** Enjoy your study :hearts:");
-    wait (5000);
-    msg.channel.send("**Take a break!** Set a new study timer when you're ready to come back.");
-  }
-});
