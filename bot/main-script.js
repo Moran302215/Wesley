@@ -53,3 +53,23 @@ client.on("messageCreate", (msg) => {
 //   }
 // });
 //Whitelist
+
+function pomodoro1(msg) {
+  msg.channel.send("**Setting a timer for 25 minutes...**");
+}
+
+function pomodoro2(msg) {
+  msg.channel.send("**Timer set!** Enjoy your study!")
+}
+
+function pomodoro3(msg) {
+  msg.channel.send("**Take a break!** Set a new study timer when you're ready to come back.");
+}
+
+client.on("messageCreate", (msg) => {
+  if (msg.content === "w!study") {
+    setTimeout (() => pomodoro1(msg), 2000);
+    setTimeout (() => pomodoro2(msg), 3000);
+    setTimeout (() => pomodoro3(msg), 1500000);
+  }
+})
